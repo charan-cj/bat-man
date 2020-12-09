@@ -31,20 +31,7 @@ function setup() {
 
 function draw() {
     background("black");
-    thunder = createSprite(100,100,50,50);
-    // thunder.addImage(thunderImg);
-    thunder.Scale = 0.01;
-    var thu = Math.round(random(1,2));
-    if(frameCount%100 === 0){
-        if(thu === 1){
-            thunder.addImage(thunderImg);
-        }
-        else{
-            thunder.addImage(thunder1Img);
-        }
-       
-        thunder.lifetime = 20;
-    }
+   
     // updating Engine
     Engine.update(engine);
     for(var i=0; i<100;i++){
